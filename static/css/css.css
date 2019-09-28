@@ -1,0 +1,39 @@
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.cell {
+    cursor: pointer;
+    min-height: 100%;
+    margin-bottom: 30px;
+}
+
+img {
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.5);
+    animation: bounceIn 2s;
+    border-radius: 4px;
+    background-color: lightgray;
+    transition: width 2s, height 2s;
+    opacity: 1;
+    max-height: 250px;
+}
+
+header {
+    margin-top: 15px;
+    text-align: center;
+}
+
+img:hover {
+    opacity: 0.8;
+}
